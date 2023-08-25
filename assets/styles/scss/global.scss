@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  :active,
+  :hover,
+  :focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+  body {
+    font-family: "harmonia-regular", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: $back-dark-gray;
+    overflow: auto;
+    height: 100%;
+  }
+  li {
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .fade-animation{
+    display: none;
+    transform: translateX(-150%);
+    animation: ani 2s forwards;
+  }
+  .title{
+    font-family: 'stagsans', sans-serif;
+    font-size: 42px;
+    margin-bottom: 1.5rem;
+    cursor: default;
+    transition: 0.4s;
+  }
+  .subtitle{
+    font-family: 'stagsans', sans-serif;
+    font-size: 34px;
+    margin: 2.5rem auto;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+  }
+  .btn{
+    width: 13rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+   }
+   .btn_border{
+    border: 1px solid $orange;
+    border-radius: 50px;
+   }
+   .btn {
+    span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  span:after {
+    content: '';
+ background: url("../../imgs/arrow.png") no-repeat;
+ background-size: 15px 15px;
+ width: 15px;
+ height: 15px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  &:hover {
+    span {
+        padding-right: 25px;
+      }
+  }
+  &:hover{
+    span:after {
+        opacity: 1;
+        right: 0;
+      }
+  }
+}
+   .orange{
+    background-color: $orange;
+   }
+   .red{
+    background-color: $red;
+   }
+
+
+   @keyframes ani {
+    0% {
+      transform: translateY(-150%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+  
+  @media screen and (max-width: $tablet-width){
+    .title{
+        font-family: 'stagsans', sans-serif;
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+      }
+      .btn{
+        width: 15rem;
+        font-size: 10px;
+        padding: 1rem ;
+        span:after {
+         background-size: 0;
+         width: 0;
+         height: 0;
+          }
+          &:hover {
+            span {
+                padding-right: 0;
+              }
+          }
+      }
+  }
