@@ -12,7 +12,7 @@
     height: 150px;
     position: absolute;
     top: calc(50vh - 75px);
-    left: calc(50vw - 75px);
+    left: calc(50vw - 90px);
   }
   
   .loader-p:before, .loader-p:after{
@@ -45,4 +45,3 @@
       opacity: 0;
     }
   }
-  /*end of custom preloader*/
