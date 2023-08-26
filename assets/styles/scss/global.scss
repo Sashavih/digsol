@@ -162,6 +162,10 @@
       }
   }
   @media screen and (max-width: $mobile-width){
+    .title{
+        font-size: 27px;
+        margin-bottom: 1.5rem;
+      }
     .btn{
         width: 8rem; 
   }

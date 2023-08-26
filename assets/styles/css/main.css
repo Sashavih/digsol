@@ -162,6 +162,10 @@ a {
   }
 }
 @media screen and (max-width: 480px) {
+  .title {
+    font-size: 27px;
+    margin-bottom: 1.5rem;
+  }
   .btn {
     width: 8rem;
   }
@@ -282,6 +286,23 @@ a {
     justify-content: center;
   }
 }
+@media screen and (max-width: 810px) {
+  .main-content {
+    width: 90%;
+    margin: 0 5rem;
+    cursor: default;
+  }
+  .main-content p {
+    width: 85%;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-content p {
+    width: 95%;
+    font-size: 14px;
+  }
+}
 .slick-track {
   display: flex;
   align-items: stretch;
@@ -344,10 +365,36 @@ a {
     right: 25%;
   }
 }
+@media screen and (max-width: 480px) {
+  .slider {
+    margin: 2rem auto;
+  }
+  .slider .slider__item img {
+    max-width: 90%;
+  }
+  .slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .slider .slick-arrow {
+    top: 110%;
+  }
+  .slider .slick-prev {
+    left: 10%;
+  }
+  .slider .slick-next {
+    right: 10%;
+  }
+}
 .board {
   min-height: 100vh;
 }
 
+@media screen and (max-width: 480px) {
+  .board {
+    min-height: 100%;
+  }
+}
 .pluses-box {
   display: flex;
   flex-direction: row;
@@ -440,6 +487,9 @@ a {
   }
 }
 @media screen and (max-width: 480px) {
+  .pluses {
+    margin-top: 6rem;
+  }
   .pluses-box__title {
     font-size: 15px;
   }
@@ -466,7 +516,7 @@ a {
     margin: 3rem auto 2rem auto;
     font-size: 12px;
     justify-content: center;
-    width: 80%;
+    width: 73%;
   }
   .pluses__content img {
     max-width: 2rem;
@@ -479,5 +529,54 @@ a {
     padding: 1rem;
   }
 }
+.loader-bg {
+  position: fixed;
+  z-index: 999999;
+  background: #212121;
+  width: 100%;
+  height: 100%;
+}
+
+.loader-p {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader-p:before, .loader-p:after {
+  content: "";
+  border: 1em solid #D26E4B;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader-p:before {
+  animation-delay: 0.5s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/*end of custom preloader*/
 
 /*# sourceMappingURL=main.css.map */

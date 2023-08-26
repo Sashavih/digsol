@@ -90,6 +90,9 @@
     }
 }
 @media screen and (max-width: $mobile-width){
+    .pluses{
+        margin-top: 6rem;
+      }
     .pluses-box__title{
         font-size: 15px;
     }
@@ -116,7 +119,7 @@
         margin: 3rem auto 2rem auto;
         font-size: 12px;
         justify-content: center;
-        width: 80%;
+        width: 73%;
         img{
             max-width: 2rem;
         }
