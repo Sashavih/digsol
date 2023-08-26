@@ -44,7 +44,25 @@
             max-width: 65%;
         }
     }
-  
+  }
+  @media screen and (max-width: $tablet-width){
+    .slider{
+        margin: 8em auto;
+    .slider__item{
+        img{
+            max-width: 90%;
+        }
+    }
+    .slick-arrow {
+        top: 110%;
+    }
+    .slick-prev {
+        left: 25%;
+    }
+    .slick-next {
+        right: 25%;
+    }
+}
   }
   
  

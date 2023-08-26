@@ -42,7 +42,7 @@
   .subtitle{
     font-family: 'stagsans', sans-serif;
     font-size: 34px;
-    margin: 2.5rem auto;
+    margin: 3rem auto;
     text-transform: uppercase;
     cursor: default;
     text-align: center;
@@ -63,7 +63,8 @@
     transition: all 0.5s;
    }
    .btn_border{
-    border: 1px solid $orange;
+    border: 1.7px solid $orange;
+    background-color: rgba(0, 0, 0, 0.471);
     border-radius: 50px;
    }
    .btn {
@@ -120,8 +121,13 @@
   @media screen and (max-width: $tablet-width){
     .title{
         font-family: 'stagsans', sans-serif;
-        font-size: 30px;
+        font-size: 36px;
         margin-bottom: 1.5rem;
+      }
+      .subtitle{
+        font-family: 'stagsans', sans-serif;
+        font-size: 30px;
+        margin: 3.5rem auto;
       }
       .btn{
         width: 15rem;
@@ -139,3 +145,8 @@
           }
       }
   }
+  @media screen and (max-width: $mobile-width){
+    .btn{
+        width: 8rem; 
+  }
+}
