@@ -37,6 +37,24 @@ a {
   animation: ani 2s forwards;
 }
 
+.fade-animation2 {
+  display: none;
+  transform: translateX(-50%);
+  animation: ani 2.5s forwards;
+}
+
+.fade-animation3 {
+  display: none;
+  transform: translateX(-50%);
+  animation: ani 3s forwards;
+}
+
+.fade-animation4 {
+  display: none;
+  transform: translateX(-50%);
+  animation: ani 3.5s forwards;
+}
+
 .title {
   font-family: "stagsans", sans-serif;
   font-size: 42px;
@@ -330,10 +348,6 @@ a {
   min-height: 100vh;
 }
 
-.pluses {
-  min-height: 100vh;
-}
-
 .pluses-box {
   display: flex;
   flex-direction: row;
@@ -341,7 +355,7 @@ a {
   align-items: center;
   margin: 5rem auto;
   gap: 3rem;
-  width: 90%;
+  width: 80%;
 }
 
 .pluses-box__item {
