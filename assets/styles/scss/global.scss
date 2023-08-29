@@ -80,7 +80,6 @@
    }
    .btn_border{
     border: 1.7px solid $orange;
-    background-color: rgba(0, 0, 0, 0.611);
     border-radius: 50px;
    }
    .btn {
@@ -120,11 +119,28 @@
    .red{
     background-color: $red;
    }
+.block{
+    display: block;
+    transform: translateX(-150%);
+    animation: ani-drop-down 1s forwards;
+}
+.none{
+    display: none;
+}
 
 
    @keyframes ani {
     0% {
       transform: translateY(-150%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes ani-drop-down {
+    0% {
+      transform: translateY(-30%);
     }
   
     100% {
@@ -165,6 +181,11 @@
     .title{
         font-size: 27px;
         margin-bottom: 1.5rem;
+      }
+      .subtitle{
+        font-family: 'stagsans', sans-serif;
+        font-size: 20px;
+        margin: 3.5rem auto;
       }
     .btn{
         width: 8rem; 

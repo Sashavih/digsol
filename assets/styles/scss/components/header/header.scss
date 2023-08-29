@@ -1,15 +1,19 @@
 
 .header{
     display: flex;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 1%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding:0.8rem 4rem;
-    background-color: $back-dark-gray;
 }
 
 .header__nav{
     display: flex;
+    z-index: 25000;
     flex-direction: row;
     align-items: center;
     gap: 2rem;
@@ -69,6 +73,7 @@
         }
 }
 @media screen and (max-width: $mobile-width){
+  
     .header__nav{
       display: none;
         }

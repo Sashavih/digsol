@@ -6,3 +6,6 @@ $(function () {
     $('.pluses__item').fadeIn(1000);
 })
 
+$('#marketing-drop-down').click(function(){
+    $('.drop-down').toggleClass('block none');
+  });
