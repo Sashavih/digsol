@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $('.slider').slick({
+    $('.friends-slider').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 4,
         speed: 300,
         easing: 'ease',
         cssEase: 'ease-in',
@@ -9,7 +9,7 @@ $(document).ready(function () {
             {
                 breakpoint: 810,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 2
                 }
             },
             {
@@ -21,6 +21,3 @@ $(document).ready(function () {
         ]
     });
 });
-
-
-

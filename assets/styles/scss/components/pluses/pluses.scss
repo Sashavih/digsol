@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    margin: 7rem auto;
+    margin: 5rem auto 0 auto;
     gap: 3rem;
     width: 85%;
 }
@@ -39,6 +39,7 @@
     cursor: default;
 }
 .pluses__content{
+    background-color: #1515157a;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -47,7 +48,8 @@
     color: black;
     font-weight: 700;
     font-size: 14px;
-    width: 90%;
+    width: 100%;
+    padding: 3rem 5rem;
     img{
         max-width: 2.5rem;
     }
@@ -74,14 +76,15 @@
     }
     .pluses-box{
         gap: 2rem;
+        margin: 4rem auto 0 auto;
     }
     .pluses-box__item{
         width: 50%;
         min-height: 21rem;     
     }
     .pluses__content{
-        width: 83%;
-        gap: 1rem;
+        padding: 2rem 3rem;
+        gap: 1.5rem;
     }
     .pluses__item{
         width: 10rem;
@@ -129,7 +132,7 @@
     }
     .pluses__item{
         width:9rem;
-        padding: 1rem;
+        padding: 0.7rem;
     }
     
 }
