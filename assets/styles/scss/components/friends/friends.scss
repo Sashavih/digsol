@@ -49,9 +49,10 @@
 
   @media screen and (max-width: $mobile-width){
     .friends{
-        margin: 4rem 0;
+        margin: 3rem 0;
     }
     .friends-slider {
+        margin: 4em auto;
     .slick-arrow {
         top: 23%;
         width: 40px;
@@ -64,4 +65,5 @@
        right: -20%;
       }
     }
-  }
+  } 
+   

@@ -1,5 +1,6 @@
 
 .header{
+    font-family: 'Roboto-Medium', sans-serif;
     display: flex;
     z-index: 1000;
     position: fixed;
@@ -19,7 +20,6 @@
     gap: 2rem;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 700;
     }
    
 .bottom-border{

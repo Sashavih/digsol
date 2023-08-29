@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "poppins";
+  src: url(../../fonts/Poppins-Regular.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(../../fonts/Roboto-Bold.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../../fonts/Roboto-Light.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../../fonts/Roboto-Regular.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../../fonts/Roboto-Black.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../../fonts/Roboto-Medium.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(../../fonts/Roboto-Thin.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +55,8 @@
 }
 
 body {
-  font-family: "harmonia-regular", sans-serif;
-  font-weight: 500;
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   color: rgb(255, 255, 255);
   background-color: #212121;
@@ -56,7 +98,7 @@ a {
 }
 
 .title {
-  font-family: "stagsans", sans-serif;
+  font-family: "Roboto-Black", sans-serif;
   font-size: 42px;
   margin-bottom: 1.5rem;
   cursor: default;
@@ -64,7 +106,7 @@ a {
 }
 
 .subtitle {
-  font-family: "stagsans", sans-serif;
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 34px;
   margin: 3rem auto;
   text-transform: uppercase;
@@ -78,7 +120,7 @@ a {
   font-family: inherit;
   cursor: pointer;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   padding: 1rem 2rem;
   text-transform: uppercase;
@@ -155,12 +197,10 @@ a {
 }
 @media screen and (max-width: 810px) {
   .title {
-    font-family: "stagsans", sans-serif;
     font-size: 36px;
     margin-bottom: 1.5rem;
   }
   .subtitle {
-    font-family: "stagsans", sans-serif;
     font-size: 30px;
     margin: 3.5rem auto;
   }
@@ -179,20 +219,23 @@ a {
   }
 }
 @media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
   .title {
-    font-size: 27px;
+    font-size: 25px;
     margin-bottom: 1.5rem;
   }
   .subtitle {
-    font-family: "stagsans", sans-serif;
     font-size: 20px;
-    margin: 3.5rem auto;
+    margin: 3.5rem auto 1rem auto;
   }
   .btn {
     width: 10rem;
   }
 }
 .header {
+  font-family: "Roboto-Medium", sans-serif;
   display: flex;
   z-index: 1000;
   position: fixed;
@@ -212,7 +255,6 @@ a {
   gap: 2rem;
   text-transform: uppercase;
   font-size: 13px;
-  font-weight: 700;
 }
 
 .bottom-border {
@@ -320,13 +362,16 @@ a {
     cursor: default;
   }
   .main-content p {
-    width: 100%;
-    font-size: 14px;
+    margin: auto;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
-  .main-content p {
+  .main-content {
     width: 95%;
+  }
+  .main-content p {
+    width: 90%;
     font-size: 14px;
   }
 }
@@ -394,7 +439,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   .slider {
-    margin: 2rem auto;
+    margin: 1.5rem auto 5rem auto;
   }
   .slider .slider__item img {
     max-width: 90%;
@@ -420,6 +465,7 @@ a {
 @media screen and (max-width: 480px) {
   .board {
     min-height: 100%;
+    padding-bottom: 5rem;
   }
 }
 .pluses {
@@ -458,7 +504,6 @@ a {
 }
 
 .pluses-box__title {
-  font-family: "stagsans", sans-serif;
   font-size: 26px;
   margin: 0 auto 0 auto;
   text-transform: uppercase;
@@ -482,6 +527,7 @@ a {
   max-width: 2.5rem;
 }
 .pluses__content p {
+  font-family: "Roboto-Light", sans-serif;
   margin-top: 1.5rem;
 }
 
@@ -521,7 +567,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   .pluses {
-    margin: 4rem 0;
+    margin: 3rem 0;
   }
   .pluses-box__title {
     font-size: 15px;
@@ -529,9 +575,9 @@ a {
   .pluses-box {
     flex-direction: column;
     align-items: center;
-    margin: 4rem auto;
+    margin: 3rem auto;
     width: 93%;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .pluses-box__item {
     text-align: center;
@@ -626,6 +672,7 @@ a {
 }
 
 .marketing-box__about {
+  font-family: "Roboto-Regular", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -643,8 +690,8 @@ a {
 }
 
 .marketing__title {
+  font-family: "Roboto-Bold", sans-serif;
   color: #D26E4B;
-  font-family: "stagsans", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   cursor: default;
@@ -652,7 +699,7 @@ a {
 }
 
 .marketing-box_icon {
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
   cursor: default;
 }
 .marketing-box_icon::before {
@@ -671,17 +718,27 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  .marketing {
-    margin-top: 9rem;
-  }
   .marketing-box {
     width: 93%;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .marketing-box__about {
     align-items: center;
     padding: 2rem 1rem;
+    gap: 0.5rem;
+  }
+  .marketing-box__about p {
+    text-align: center;
+  }
+  .marketing__title {
+    font-size: 16px;
+  }
+  .marketing-box_icon {
+    margin-top: 0rem;
+  }
+  .marketing-box_icon::before {
+    padding: 0.4rem;
   }
 }
 .feedback {
@@ -788,7 +845,10 @@ a {
 }
 @media screen and (max-width: 480px) {
   .friends {
-    margin: 4rem 0;
+    margin: 3rem 0;
+  }
+  .friends-slider {
+    margin: 4em auto;
   }
   .friends-slider .slick-arrow {
     top: 23%;

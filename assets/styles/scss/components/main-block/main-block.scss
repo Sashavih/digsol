@@ -47,15 +47,16 @@
         margin: 0 5rem;
         cursor: default;    
         p{
-            width: 100%;
-            font-size: 14px;
+            margin: auto;
+            font-size: 15px;
         }
     }
 }
 @media screen and (max-width: $mobile-width){
     .main-content{  
+        width: 95%;
         p{
-            width:95%;
+            width:90%;
             font-size: 14px;
         }
     }

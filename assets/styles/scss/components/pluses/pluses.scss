@@ -32,7 +32,6 @@
     }
 }
 .pluses-box__title{
-    font-family: 'stagsans', sans-serif;
     font-size: 26px;
     margin: 0 auto 0 auto ;
     text-transform: uppercase;
@@ -54,7 +53,9 @@
         max-width: 2.5rem;
     }
     p{
+        font-family: 'Roboto-Light', sans-serif;
         margin-top: 1.5rem;
+        
     }
 }
 .pluses__item{
@@ -93,7 +94,7 @@
 }
 @media screen and (max-width: $mobile-width){
     .pluses{
-        margin: 4rem 0;
+        margin: 3rem 0;
     }
     .pluses-box__title{
         font-size: 15px;
@@ -101,9 +102,9 @@
     .pluses-box{
         flex-direction: column;
         align-items: center;
-        margin: 4rem auto;
+        margin: 3rem auto;
         width: 93%;
-        gap: 2rem;
+        gap: 1.5rem;
     }
     .pluses-box__item{
         text-align: center;

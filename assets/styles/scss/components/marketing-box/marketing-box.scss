@@ -15,6 +15,7 @@
     }
 }
 .marketing-box__about{
+    font-family: 'Roboto-Regular', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -31,8 +32,8 @@
     }
 }
 .marketing__title{
+    font-family: 'Roboto-Bold', sans-serif;
     color: $red;
-    font-family: 'stagsans', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     cursor: default;
@@ -40,7 +41,7 @@
 }
 
 .marketing-box_icon{
-    margin-top: 0.8rem;
+    margin-top: 0.4rem;
     cursor: default;
     &::before{
     content: "";
@@ -62,16 +63,26 @@
 
 
 @media screen and (max-width: $mobile-width){
-.marketing{
-    margin-top: 9rem;
-}
 .marketing-box{
     width: 93%;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .marketing-box__about{
     align-items: center;
     padding: 2rem 1rem;
+    gap: 0.5rem;
+    p{
+        text-align: center;
+    }
+}
+.marketing__title{
+    font-size: 16px;
+}
+.marketing-box_icon{
+    margin-top: 0rem;
+    &::before{
+ padding:0.4rem ;
+    }
 }
 }
