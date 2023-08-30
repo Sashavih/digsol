@@ -40,6 +40,12 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "din";
+  src: url(../../fonts/DIN2014-Regular.woff) format("woff");
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +61,7 @@
 }
 
 body {
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "din", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -98,15 +104,16 @@ a {
 }
 
 .title {
-  font-family: "Roboto-Black", sans-serif;
+  font-family: "din", sans-serif;
   font-size: 42px;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   cursor: default;
   transition: 0.4s;
 }
 
 .subtitle {
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "din", sans-serif;
   font-size: 34px;
   margin: 3rem auto;
   text-transform: uppercase;
@@ -312,7 +319,7 @@ a {
   }
 }
 .main-block {
-  background: no-repeat center/100% url("../../imgs/4.jpg");
+  background: no-repeat center/100% url("../../imgs/luk.jpg");
   background-size: cover;
   width: 100%;
   min-height: 100vh;
