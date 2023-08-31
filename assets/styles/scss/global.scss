@@ -19,6 +19,7 @@
     background-color: $back-dark-gray;
     overflow: auto;
     height: 100%;
+    cursor: default;
   }
   li {
     list-style: none;
@@ -169,7 +170,7 @@
   
     50% {
       box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-      transform: translatey(-20px);
+      transform: translatey(-10px);
     }
   
     100% {
@@ -201,6 +202,32 @@
       opacity: 0.8;
      }
   }
+  .up {
+    display: none;
+    position: fixed;
+    bottom: 7rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-image: url("../../imgs/arrow-up.png");
+    background-repeat: no-repeat;
+    background-size: 60% ;
+    background-position: center;
+    background-color: $back-gray;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite; 
+    left: 3rem;
+    &:hover{
+      opacity: 0.8;
+     }
+  }
+
 .whats{
   right: 5rem;
   background-image: url("../../imgs/whats.png");
@@ -209,6 +236,7 @@
   right: 10rem;
   background-image: url("../../imgs/mail.png");
 }
+
   
   @media screen and (max-width: $tablet-width){
     .title{
@@ -234,6 +262,16 @@
               }
           }
       }
+      .whats{
+        right: 2rem;
+      }
+      .mail{
+        right: 6.5rem;
+      }
+      .up {
+        bottom: 7rem;
+        left: 2rem;
+      }
   }
   @media screen and (max-width: $mobile-width){
     body{
@@ -257,6 +295,10 @@
     height: 2.5rem;
   }
   .whats{
-    right: 2.5rem;
+    right: 5rem;
+  }
+  .up{
+    right: 1.3rem;
+    left: auto;
   }
 }
