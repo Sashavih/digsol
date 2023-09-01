@@ -580,7 +580,7 @@ a {
 @media screen and (max-width: 480px) {
   .board {
     min-height: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 0.5rem;
   }
 }
 .pluses {
