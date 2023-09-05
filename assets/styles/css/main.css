@@ -273,20 +273,10 @@ a {
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   transform: translatey(0px);
   animation: float 3s ease-in-out infinite;
-  left: 3rem;
+  right: 3rem;
 }
 .up:hover {
   opacity: 0.8;
-}
-
-.whats {
-  right: 5rem;
-  background-image: url("../../imgs/whats.png");
-}
-
-.mail {
-  right: 10rem;
-  background-image: url("../../imgs/mail.png");
 }
 
 @media screen and (max-width: 810px) {
