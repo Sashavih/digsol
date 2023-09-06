@@ -455,6 +455,7 @@ a {
     width: 85%;
     height: 100%;
     margin: 0 auto;
+    padding: 0;
   }
   .main-btns {
     justify-content: center;
@@ -468,7 +469,7 @@ a {
   }
   .main-content p {
     margin: auto;
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -477,7 +478,7 @@ a {
   }
   .main-content p {
     width: 90%;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 .slick-track {

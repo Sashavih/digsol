@@ -36,6 +36,7 @@
         width: 85%;
         height: 100%;
         margin: 0 auto;
+        padding: 0;
     }
     .main-btns{
         justify-content: center;
@@ -49,7 +50,7 @@
         cursor: default;    
         p{
             margin: auto;
-            font-size: 15px;
+            font-size: 18px;
         }
     }
 }
@@ -58,7 +59,7 @@
         width: 95%;
         p{
             width:90%;
-            font-size: 14px;
+            font-size: 15px;
         }
     }
 }
