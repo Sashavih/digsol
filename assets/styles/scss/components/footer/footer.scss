@@ -1,12 +1,12 @@
 .footer{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.5rem;
     padding: 3rem 0;
     background-color: $back-dark-gray;
 }
 .privacy-link{
-    margin: auto;
+   margin: auto;
     color: $text-dark-gray;
     cursor: pointer;
 }
@@ -16,16 +16,35 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-a{
-    color: $text-dark-gray;
-    &:hover{
-        color: $red;
+
+}
+.footer__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     margin-right: 10rem;
+    justify-content: flex-end;
+    a{
+        color: $text-dark-gray;
+        &:hover{
+            color: $red;
+        }
     }
 }
+
+@media screen and (max-width: $tablet-width){
+.footer__nav{
+    gap: 2rem;
+     margin-right: 0;
+    justify-content: center;
+    padding-bottom: 1rem;
 }
+}
+
 @media screen and (max-width: $mobile-width){
     .footer{
-        padding: 3rem 0 8rem 0;
+        padding: 3rem 0;
+        gap: 1.5rem;
     }
     .footer__links{
         gap: 1rem;

@@ -8,7 +8,7 @@
     text-align: center;
   
     .slick-arrow {
-      top: 5%;
+      top: 27%;
       position: absolute;
       z-index: 10;
       font-size: 0;
@@ -36,7 +36,7 @@
     }
   
     img{
-        max-width: 50%;
+        max-width: 80%;
     }
   }
 
@@ -45,7 +45,11 @@
         .slick-arrow {
             top: 13%;
           }
+          .slick-arrow {
+            top: 30%;
+          }
         }
+      
   }
 
   @media screen and (max-width: $mobile-width){
@@ -55,7 +59,7 @@
     .friends-slider {
         margin: 4em auto;
     .slick-arrow {
-        top: 23%;
+        top: 31%;
         width: 40px;
         height: 40px;
       }
