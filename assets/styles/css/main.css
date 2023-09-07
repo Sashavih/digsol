@@ -273,7 +273,7 @@ a {
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   transform: translatey(0px);
   animation: float 3s ease-in-out infinite;
-  right: 3rem;
+  right: 2rem;
 }
 .up:hover {
   opacity: 0.8;
@@ -996,9 +996,11 @@ a {
 .footer__nav {
   display: flex;
   flex-direction: row;
+  width: 85%;
   align-items: center;
   margin-right: 10rem;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .footer__nav a {
   color: #8f8f8f;
@@ -1009,16 +1011,18 @@ a {
 
 @media screen and (max-width: 810px) {
   .footer__nav {
+    width: 65%;
     gap: 2rem;
-    margin-right: 0;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
   .footer {
-    padding: 3rem 0;
     gap: 1.5rem;
+  }
+  .footer__nav {
+    width: 80%;
   }
   .footer__links {
     gap: 1rem;

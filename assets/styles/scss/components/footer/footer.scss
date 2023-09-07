@@ -21,9 +21,11 @@
 .footer__nav{
     display: flex;
     flex-direction: row;
+    width: 85%;
     align-items: center;
      margin-right: 10rem;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin: 0 auto;
     a{
         color: $text-dark-gray;
         &:hover{
@@ -34,17 +36,19 @@
 
 @media screen and (max-width: $tablet-width){
 .footer__nav{
+    width: 65%;
     gap: 2rem;
-     margin-right: 0;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 1rem;
 }
 }
 
 @media screen and (max-width: $mobile-width){
     .footer{
-        padding: 3rem 0;
         gap: 1.5rem;
+    }
+    .footer__nav{
+        width: 80%;
     }
     .footer__links{
         gap: 1rem;
