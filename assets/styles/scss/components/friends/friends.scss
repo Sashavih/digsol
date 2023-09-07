@@ -8,7 +8,7 @@
     text-align: center;
   
     .slick-arrow {
-      top: 27%;
+      top: -15%;
       position: absolute;
       z-index: 10;
       font-size: 0;
@@ -36,19 +36,23 @@
     }
   
     img{
-        max-width: 80%;
+        max-width: 95%;
     }
   }
 
   @media screen and (max-width: $tablet-width){
     .friends-slider {
         .slick-arrow {
-            top: 13%;
+            top: 2%;
           }
-          .slick-arrow {
-            top: 30%;
+          .slick-prev {
+            left: -20%;
+          }
+          .slick-next {
+           right: -20%;
           }
         }
+     
       
   }
 
@@ -59,15 +63,15 @@
     .friends-slider {
         margin: 4em auto;
     .slick-arrow {
-        top: 31%;
+       top: 5%;
         width: 40px;
         height: 40px;
       }
       .slick-prev {
-        left: -20%;
+        left: -25%;
       }
       .slick-next {
-       right: -20%;
+       right: -25%;
       }
     }
   } 
