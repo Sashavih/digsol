@@ -9,6 +9,9 @@
    margin: auto;
     color: $text-dark-gray;
     cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+      }
 }
 .footer__links{
     display: flex;

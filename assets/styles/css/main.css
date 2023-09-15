@@ -112,6 +112,9 @@ a {
   cursor: default;
   transition: 0.4s;
 }
+.title:hover {
+  color: #C8C8C8;
+}
 
 .subtitle {
   font-family: "din", sans-serif;
@@ -120,6 +123,9 @@ a {
   text-transform: uppercase;
   cursor: default;
   text-align: center;
+}
+.subtitle:hover {
+  color: #8f8f8f;
 }
 
 .btn {
@@ -987,6 +993,9 @@ a {
   color: #8f8f8f;
   cursor: pointer;
 }
+.privacy-link:hover {
+  opacity: 0.8;
+}
 
 .footer__links {
   display: flex;
@@ -1089,6 +1098,7 @@ a {
   text-align: center;
 }
 .gallery__item img {
+  border-radius: 20px;
   max-width: 45%;
 }
 .gallery__item img:hover {

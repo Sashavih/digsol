@@ -56,15 +56,20 @@
     margin-bottom: 1.5rem;
     cursor: default;
     transition: 0.4s;
+    &:hover{
+      color: $text-gray;
+     }
   }
   .subtitle{
     font-family: 'din', sans-serif;
     font-size: 34px;
-   
     margin: 3rem auto;
     text-transform: uppercase;
     cursor: default;
     text-align: center;
+    &:hover{
+      color: $text-dark-gray;
+     }
   }
   .btn{
     width: 13rem;
@@ -229,7 +234,7 @@
   }
 
 
-  
+
   @media screen and (max-width: $tablet-width){
     .title{
         font-size: 36px;
